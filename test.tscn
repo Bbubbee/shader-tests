@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://ccrtuwqykpr8h"]
+
+[ext_resource type="Texture2D" uid="uid://cmj7pyyujosxr" path="res://icon.svg" id="1_37kl0"]
+[ext_resource type="Shader" uid="uid://fy3f38gjslff" path="res://shockwave.gdshader" id="2_8uh7m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_37kl0"]
+shader = ExtResource("2_8uh7m")
+shader_parameter/center = Vector2(0.5, 0.5)
+shader_parameter/force = -0.055
+
+[node name="Test" type="Node2D" unique_id=1976392202]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=492162046]
+position = Vector2(142, 521)
+texture = ExtResource("1_37kl0")
+
+[node name="Icon2" type="Sprite2D" parent="." unique_id=878088015]
+position = Vector2(88, 178)
+texture = ExtResource("1_37kl0")
+
+[node name="Icon3" type="Sprite2D" parent="." unique_id=171268761]
+position = Vector2(853, 153)
+texture = ExtResource("1_37kl0")
+
+[node name="Icon4" type="Sprite2D" parent="." unique_id=551318820]
+position = Vector2(951, 483)
+texture = ExtResource("1_37kl0")
+
+[node name="Icon5" type="Sprite2D" parent="." unique_id=1910453461]
+position = Vector2(575, 367)
+texture = ExtResource("1_37kl0")
+
+[node name="Icon6" type="Sprite2D" parent="." unique_id=8859789]
+visible = false
+position = Vector2(580, 346)
+scale = Vector2(9.203125, 5.734375)
+texture = ExtResource("1_37kl0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=865071015]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1035486489]
+material = SubResource("ShaderMaterial_37kl0")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

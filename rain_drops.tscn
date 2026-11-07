@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dxylcny6osp28"]
+
+[ext_resource type="Shader" uid="uid://b5twuhnmvuy48" path="res://rain_drops.gdshader" id="1_1gk1c"]
+[ext_resource type="Texture2D" uid="uid://cmj7pyyujosxr" path="res://icon.svg" id="1_eqc68"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eqc68"]
+shader = ExtResource("1_1gk1c")
+shader_parameter/drop_count = 1.0
+shader_parameter/ripple_speed = 0.4
+shader_parameter/ripple_max_radius = 0.35
+shader_parameter/ripple_strength = 0.35
+shader_parameter/ring_count = 0.1
+shader_parameter/fade_power = 3.0
+shader_parameter/ripple_color = Color(0.55, 0.78, 1, 0.18)
+shader_parameter/shimmer_intensity = 0.5
+
+[node name="RainDrops" type="Node2D" unique_id=210104517]
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=619273542]
+material = SubResource("ShaderMaterial_eqc68")
+texture = ExtResource("1_eqc68")
+centered = false
